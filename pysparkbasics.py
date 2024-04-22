@@ -109,6 +109,11 @@ df.write.json(path = 'dbfs:/FileStore/pyspark Data/FirstWrite.json', mode = 'app
 
 # COMMAND ----------
 
+data = df
+display(data)
+
+# COMMAND ----------
+
 #Read The Recently Created Json Write File
 schema = StructType().add(field = 'email', data_type = StringType())\
                      .add(field = 'first_name', data_type = StringType())\
